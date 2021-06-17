@@ -6,9 +6,9 @@ matrix:
         - only:
           - master
           - develop
+          - SDC-3960
       addons:
         - sonarcloud:
-#          - organization: "USDOT-SDC"
           - organization: "kbrpurchase1"
       before_script:
         - npm install -g @angular/cli
@@ -24,7 +24,6 @@ matrix:
           - develop
       addons:
         - sonarcloud:
-#          - organization: "USDOT-SDC"
           - organization: "kbrpurchase1"
       install:
         - pip install -r webportal/lambda/requirements.txt -r webportal/lambda/development_requirements.txt
